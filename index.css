@@ -257,8 +257,8 @@
         justify-content: space-around;
         
     }
-   .nav-links h1:hover + .dropdown {
-    display: contents;
-    }
+   .navbar:has(.nav-links h1:hover) + hr + .wellcome .dropdown {
+    display: block;
+}
 
 }
