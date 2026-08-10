@@ -40,6 +40,12 @@
     font-weight: bold;
     transition:all 0.3s ease-in-out;
 }
+.nav-links h1{
+    display: none;
+    font-size: 30px;
+    color: black;
+}
+
 .nav-links li a:hover{
     color: black;
     background: linear-gradient(
@@ -199,7 +205,7 @@
 }
 @media screen and (max-width: 400px) {
     .nav-links li a{
-        font-size: 8px;
+        display: none;
     }
     .welcometext-sub{
         font-size: 8px;
@@ -208,5 +214,17 @@
     .wellcome{
         flex-direction: column;
     }
-    
+    .nav-links h1{
+        display:contents;
+        justify-content: space-around;
+        
+    }
+    .nav-links h1:hover{
+        cursor: pointer;
+        .nav-links li a{
+            flex-direction: column;
+            display: contents;
+        }
+    }
+
 }
