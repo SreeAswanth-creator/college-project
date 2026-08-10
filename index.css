@@ -64,7 +64,6 @@
     height: auto;
     position: relative;
     overflow: hidden;
-
 }
 .welcometext{
     position: absolute;
@@ -100,10 +99,9 @@
 }
 .welcometext-sub{
     position: absolute;
-    right: auto;
-    top: 30%;
-    bottom: 20%;
-    left: 0%;
+    /* right: auto; */
+    /* top: auto;
+    left: 0%; */
     height: 60%;
     width: 100%;
     color: white;
@@ -115,12 +113,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: black 10px 10px 15px;
     display: flex;
-}     
+}    
 .backimg{
     opacity: 1;
     width: 100%;
     z-index: 3;
 }
+
 .scrolling{
     background-color: black;
     z-index: 5;
@@ -135,11 +134,18 @@
     gap: 25px;
     right: 10%;
     top: 7%;
-    animation: scroll-img;
-
-
+    animation: move-top linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 500px;
 }
-
+@keyframes move-top {
+    from{
+        top: 7%;
+    }
+    to{
+        top: -20%;
+    }
+}
 
 .scroll-1 img{
     width: 45%;
@@ -155,7 +161,18 @@
     gap: 25px;
     right: -5%;
     top: 2%;
+    animation: move-top2 linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 500px;
 
+}
+@keyframes move-top2 {
+    from{
+        top: 2%;
+    }
+    to{
+        top: 20%;
+    }
 }
 .scroll-2 img{
     width: 45%;
@@ -172,5 +189,8 @@
     .nav-links li a{
         font-size: 10px;
     }
-    
+    .welcometext-sub{
+        font-size: 10px;
+        top: 2%;
+    }
 }
