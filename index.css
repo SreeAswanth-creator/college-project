@@ -136,7 +136,7 @@
     top: 7%;
     animation: move-top linear both;
     animation-timeline: scroll(root block);
-    animation-range: 0 500px;
+    animation-range: 0 400px;
 }
 @keyframes move-top {
     from{
@@ -163,7 +163,7 @@
     top: 2%;
     animation: move-top2 linear both;
     animation-timeline: scroll(root block);
-    animation-range: 0 500px;
+    animation-range: 0 400px;
 
 }
 @keyframes move-top2 {
