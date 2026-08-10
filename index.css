@@ -45,6 +45,9 @@
     font-size: 30px;
     color: black;
 }
+.dropdown{
+    display: none;
+}
 .nav-links-dropdown{
     color: black;
     background-color: yellow;
@@ -63,7 +66,6 @@
     border-color: white;
     border-style: solid;
     overflow: hidden;
-    display: none;
 }
 .nav-links-dropdown li{
     padding-bottom: 2.5%;
@@ -255,11 +257,8 @@
         justify-content: space-around;
         
     }
-    .nav-links h1:hover{
-        .nav-links-dropdown{
-            display: contents;
-        }
+   .nav-links h1:hover + .dropdown {
+    display: contents;
     }
-    
 
 }
