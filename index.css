@@ -53,7 +53,7 @@
     background-color: yellow;
     list-style: none;
     position: absolute;
-    right: 10%;
+    right: 0%;
     display:inline-block;
     flex-direction: column;
     z-index: 1000;
