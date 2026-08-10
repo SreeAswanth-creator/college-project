@@ -65,7 +65,7 @@
     border: 1px;
     border-color: white;
     border-style: solid;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .nav-links-dropdown li{
     padding-bottom: 2.5%;
