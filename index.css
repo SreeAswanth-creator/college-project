@@ -193,4 +193,19 @@
         font-size: 10px;
         top: 2%;
     }
+    .wellcome{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .nav-links li a{
+        font-size: 8px;
+    }
+    .welcometext-sub{
+        font-size: 8px;
+        top: 2%;
+    }
+    .wellcome{
+        flex-direction: column;
+    }
 }
