@@ -169,11 +169,8 @@
     padding-bottom: 500px;
 }
 @media screen and (max-width: 768px) {
-    .scroll-1{
-        display: none;
-    }
-    .scroll-2{
-        display: none;
+    .nav-links li a{
+        font-size: 14px;
     }
     
 }
