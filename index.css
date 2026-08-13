@@ -4,6 +4,43 @@
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
+body {
+    /* background: #000;
+    cursor: none; */
+}
+
+/* .cursor {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+
+    transform: translate(-50%, -50%);
+}
+.cursor-glow {
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255, 0, 80, 0.35),
+        rgba(0, 80, 255, 0.35),
+        rgba(130, 0, 255, 0.35)
+    );
+
+    filter: blur(25px);
+
+    transform: translate(-50%, -50%);
+} */
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -34,6 +71,12 @@
     list-style: none;
     color: black;
 }
+.nav-links button{
+    width: auto;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: gold;
+}
 .nav-links li a{
     color: black;
     text-decoration: none;
@@ -44,6 +87,21 @@
     display: none;
     font-size: 30px;
     color: black;
+}
+.logo{
+    position: relative;
+}
+.logo h1{
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 42px;
+}
+.logo img{
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
 }
 .dropdown{
     display: none;
@@ -104,11 +162,10 @@
 }
 .wellcome{
     display: flex;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     z-index: 3;
     width: 100%;
-    height: auto;
     position: relative;
     overflow: hidden;
 }
@@ -149,7 +206,7 @@
     /* right: auto; */
     /* top: auto;
     left: 0%; */
-    height: 60%;
+    height: 35%;
     width: 100%;
     color: white;
     z-index: 3;
@@ -160,7 +217,60 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: black 10px 10px 15px;
     display: flex;
-}    
+}  
+.nameCollege1, .nameCollege2{
+    padding-bottom: 1%;
+}
+.nameCollege2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.nameCollege{
+    padding-bottom: 2%;
+
+}
+
+.welcometext-sub button{
+    margin-top: 13%;
+    
+}  
+.button1{
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 98%;
+    left: 28%;
+    height: 35%;
+    width: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, gold, lightyellow, yellow);
+    
+} 
+
+.button1 a, .button2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.button2{
+    position: absolute;
+    top: 158%;
+    left: 28%;
+    height: 35%;
+    width: 40%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(to right, yellow,gold,lightyellow);
+}
+.welcometext-sub p{
+    position: absolute;
+    top: 250%;
+}
+
 .backimg{
     opacity: 1;
     width: 100%;
@@ -173,7 +283,7 @@
     
 }
 .scroll-1{
-    width: 25%;
+    width: 30%;
     position: absolute;
     display: flex;
     z-index: 3;
@@ -183,7 +293,8 @@
     top: 7%;
     animation: move-top linear both;
     animation-timeline: scroll(root block);
-    animation-range: 0 400px;
+    animation-range: 0 450px;
+
 }
 @keyframes move-top {
     from{
@@ -200,17 +311,17 @@
 
 
 .scroll-2{
-    width: 25%;
+    width: 30%;
     position: absolute;
     display: flex;
     z-index: 3;
     flex-direction: column;
     gap: 25px;
-    right: -5%;
+    right: -6%;
     top: 2%;
     animation: move-top2 linear both;
     animation-timeline: scroll(root block);
-    animation-range: 0 400px;
+    animation-range: 0 450px;
 
 }
 @keyframes move-top2 {
@@ -234,7 +345,7 @@
 }
 @media screen and (max-width: 768px) {
     .nav-links li a{
-        font-size: 10px;
+        font-size: 13px;
     }
     .welcometext-sub{
         font-size: 10px;
@@ -262,6 +373,8 @@
     }
    .navbar:has(.nav-links h1:hover) + hr + .dropdown {
     display: block;
-}
-
+    }
+    /* .logo{
+        height: 50px;
+    } */
 }
