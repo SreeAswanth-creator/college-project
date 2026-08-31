@@ -352,11 +352,8 @@ body {
 }
 
 .contianer{
-    background-image: url(imgcp/gate.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: auto;
-    padding-bottom: 500px;
+    height: 1500px;
+    background-color: aqua;
 }
 @media screen and (max-width: 1000px){
     .nameCollege{
