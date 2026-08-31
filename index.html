@@ -14,7 +14,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <a href="#"><button>register</button></a>
+            <a href="#"><button>Register</button></a>
             <h1>☰</h1>
              
         </ul>
@@ -65,38 +65,6 @@
     <div class="contianer">
        <h1>dkfbsd</h1>
     </div>
-    <div class="cursor"></div>
-    <div class="cursor-glow"></div>
-    <script>
-const cursor = document.querySelector(".cursor");
-const glow = document.querySelector(".cursor-glow");
-
-let mouseX = 0;
-let mouseY = 0;
-
-let glowX = 0;
-let glowY = 0;
-
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-});
-
-function animate() {
-
-    glowX += (mouseX - glowX) * 0.08;
-    glowY += (mouseY - glowY) * 0.08;
-
-    glow.style.left = glowX + "px";
-    glow.style.top = glowY + "px";
-
-    requestAnimationFrame(animate);
-}
-
-animate();
-</script>
+    
 </body>
 </html>

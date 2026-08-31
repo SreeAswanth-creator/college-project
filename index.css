@@ -73,12 +73,21 @@ body {
 }
 .nav-links button{
     width: auto;
-    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: 1px;
+    border-style: solid;
+    position: relative;
+    top: -3px;
+    height: 125%;
+    border-radius: 8px 0px;
+    box-shadow: 0px 2px 5px;
     font-weight: 700;
     background-color: gold;
 }
 .nav-links li a{
     color: black;
+    font-size: 120%;
     text-decoration: none;
     font-weight: bold;
     transition:all 0.3s ease-in-out;
@@ -171,12 +180,13 @@ body {
 }
 .welcometext{
     position: absolute;
+    overflow-y: hidden;
     right: auto;
     top: 20%;
     bottom: 20%;
     left: 5%;
     height: 60%;
-    width: 40%;
+    width: 43%;
     background-color: transparent;
     color: black;
     z-index: 3;
@@ -218,15 +228,20 @@ body {
     text-shadow: black 10px 10px 15px;
     display: flex;
 }  
-.nameCollege1, .nameCollege2{
-    padding-bottom: 1%;
+
+.nameCollege1{
+     font-size: 30px;
+     padding-bottom: 5px;
+
 }
 .nameCollege2{
-    font-size: 30px;
-    font-weight: 500;
+     font-size: 27px;
+     
 }
 .nameCollege{
     padding-bottom: 2%;
+    font-size: 35px;
+
 
 }
 
@@ -238,7 +253,7 @@ body {
     position: absolute;
     border: none;
     outline: none;
-    top: 98%;
+    top:105%;
     left: 28%;
     height: 35%;
     width: 40%;
@@ -343,28 +358,116 @@ body {
     background-position: auto;
     padding-bottom: 500px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px){
+    .nameCollege{
+        font-size: 30px;
+    }
+    .nameCollege1{
+        font-size: 26px;
+    }
+    .nameCollege2{
+        font-size: 19px;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+}
+@media screen and (max-width: 892px) {
     .nav-links li a{
         font-size: 13px;
     }
-    .welcometext-sub{
+    /* .welcometext-sub{
         font-size: 10px;
         top: 2%;
-    }
+    } */
+     .nameCollege{
+    padding-bottom: 2%;
+     font-size: 28px;
+
+     }
+     .nameCollege1{
+        font-size: 16px;
+     }
     .wellcome{
         flex-direction: column;
     }
+    .nameCollege2{
+        
+        font-size: 15px;
+    }
+    .button1{
+        top: 102%;
+    }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 739px){
+    .nameCollege{
+    padding-bottom: 2%;
+     font-size: 18px;
+
+     }
+     .nameCollege{
+        font-size: 25px;
+     }
+     .nameCollege1{
+        font-size: 15px;
+     }
+     .nameCollege2{
+        font: size 14px;
+     }
+}
+@media screen and (max-width: 653px) {
+    .nameCollege{
+        font-size: 21px;
+    }
+    .nameCollege1{
+        font-size: 14px;
+    }
+    .nameCollege2{
+        font-size: 13px;
+    }
+
+    
+}
+@media screen and (max-width: 550px){
+    .nameCollege{
+        font-size:18px;
+    }
+    .nameCollege2{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 450px) {
     .nav-links li a{
         display: none;
     }
-    .welcometext-sub{
-        font-size: 8px;
+    .nameCollege{
+    padding-bottom: 2%;
+     font-size: 15px;
+
+}
+
+    /* .welcometext-sub{
+        font-size: 6px;
         top: 2%;
+    } */
+    /* .nameCollege{
+        font-size: 10px;
     }
+    .nameCollege1{
+        font-size: 8px;
+    }
+    .nameCollege2{
+        font-size: 7px;
+    } */
     .wellcome{
         flex-direction: column;
+    }
+    .welcometext{
+        width: 50%;
+    }
+    .button1{
+        display: none;
     }
     .nav-links h1{
         display:contents;
@@ -374,7 +477,5 @@ body {
    .navbar:has(.nav-links h1:hover) + hr + .dropdown {
     display: block;
     }
-    /* .logo{
-        height: 50px;
-    } */
+
 }
