@@ -434,28 +434,19 @@ body {
     }
 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 458px) {
     .nav-links li a{
         display: none;
     }
     .nameCollege{
     padding-bottom: 2%;
-     font-size: 15px;
-
-}
-
-    /* .welcometext-sub{
-        font-size: 6px;
-        top: 2%;
-    } */
-    /* .nameCollege{
-        font-size: 10px;
+     font-size: 16px;
     }
     .nameCollege1{
-        font-size: 8px;
+        font-size: 12px;
     }
     .nameCollege2{
-        font-size: 7px;
+        font-size: 10px;
     } */
     .wellcome{
         flex-direction: column;
