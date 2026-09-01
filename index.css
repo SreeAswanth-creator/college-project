@@ -251,6 +251,7 @@ body {
 }  
 .mobile_version{
     /* display: none; */
+    font-weight: bold;
     position: absolute;
     top: 15%;
     left: 58%;
