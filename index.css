@@ -486,6 +486,11 @@ body {
     .welcometext-sub p{
         top: 240%;
     }
+     .welcometext-sub h3 {
+        font-size: 80%;
+        top: 50%;
+    }
+
     .nav-links h1{
         display:contents;
         justify-content: space-around;
