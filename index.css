@@ -463,7 +463,7 @@ body {
     }
     .nameCollege{
     padding-bottom: 2%;
-     font-size: 16px;
+     font-size: 17px;
     }
     .nameCollege1{
         font-size: 12px;
@@ -479,6 +479,12 @@ body {
     }
     .button1{
         display: none;
+    }
+    .button2{
+        top: 135%;
+    }
+    .welcometext-sub p{
+        top: 240%;
     }
     .nav-links h1{
         display:contents;
