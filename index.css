@@ -367,6 +367,9 @@ body {
         width: 100%;
         padding-left: 0px;
     }
+    .welcometext-sub p{
+        font-size: 12px;
+    }
 
 }
 @media screen and (max-width: 892px) {
@@ -379,7 +382,7 @@ body {
     } */
      .nameCollege{
     padding-bottom: 2%;
-     font-size: 28px;
+     font-size: 26px;
 
      }
      .nameCollege1{
@@ -395,6 +398,9 @@ body {
     .button1{
         top: 102%;
     }
+    .welcometext-sub p{
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 739px){
     .nameCollege{
@@ -403,36 +409,53 @@ body {
 
      }
      .nameCollege{
-        font-size: 25px;
+        font-size: 24px;
      }
      .nameCollege1{
-        font-size: 15px;
+        font-size: 14px;
      }
      .nameCollege2{
         font: size 14px;
      }
+     .welcometext-sub P {
+        font-size: 10px;
+     }
 }
 @media screen and (max-width: 653px) {
     .nameCollege{
-        font-size: 21px;
+        font-size: 20px;
     }
     .nameCollege1{
-        font-size: 14px;
+        font-size: 12px;
+        padding-bottom: 0%;
     }
     .nameCollege2{
-        font-size: 13px;
+        font-size: 11px;
     }
-
+    .welcometext-sub P {
+        font-size: 9px;
+    }
+    .welcometext-sub h3 {
+        font-size: 80%;
+    }
     
 }
 @media screen and (max-width: 550px){
     .nameCollege{
-        font-size:18px;
+        font-size: 18px;
     }
     .nameCollege2{
         font-size: 10px;
     }
-
+    .welcometext-sub p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 470px) {
+.nameCollege{
+    font-size: 17px;
+}
+    
 }
 @media screen and (max-width: 458px) {
     .nav-links li a{
